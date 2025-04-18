@@ -9,7 +9,6 @@ import {
   useInView,
 } from 'framer-motion';
 import styles from './Projects.module.scss';
-import { images } from '../../assets/js/images';
 import { Link } from '../Link/Link';
 import { Project } from './Project';
 import { variants } from '../../assets/js/variants';
