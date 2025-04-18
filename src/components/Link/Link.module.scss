@@ -1,0 +1,86 @@
+@import '../../variables';
+
+.link {
+  font-style: italic;
+  font-family: 'PlayfairDisplay', serif;
+  text-wrap: nowrap;
+  position: relative;
+
+  &:after {
+    content: "";
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+
+}
+
+.link_large {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'PlayfairDisplay', serif;
+  position: relative;
+
+  &:after {
+    content: "";
+    bottom: -2px;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  &:hover:after {
+    width: 0%;
+    left: 50%;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: $breakpoint-extraSmall) {
+    font-size: 1.2rem;
+  }
+}
+
+.link_medium {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'PlayfairDisplay', serif;
+  position: relative;
+
+  &:after {
+    content: "";
+    bottom: -2px;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  &:hover:after {
+    width: 0%;
+    left: 50%;
+  }
+}
+

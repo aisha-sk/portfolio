@@ -1,0 +1,69 @@
+@import '../../variables';
+
+.contact {
+  padding: 10rem;
+
+  @media (max-width: $breakpoint-extraLarge) {
+    padding: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  @media (max-width: $breakpoint-large) {
+    padding: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    padding: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.contact_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-transform: uppercase;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 0.8rem;
+  }
+}
+
+.contact_title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  letter-spacing: -3.2px;
+  text-transform: capitalize;
+  line-height: 4.5rem;
+  text-wrap: nowrap;
+
+  @media (max-width: $breakpoint-extraLarge) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  @media (max-width: $breakpoint-extraSmall) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.contact_right {
+  line-height: 2rem;
+}
+
+.contact_text {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.contact_websites {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

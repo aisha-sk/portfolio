@@ -1,0 +1,17 @@
+@import '../../variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_aboutAndContact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: $breakpoint-large) {
+    flex-direction: column;
+  }
+}

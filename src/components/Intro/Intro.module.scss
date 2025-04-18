@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+  min-height: 1000px;
+}
+
+.intro_header {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2rem;
+  text-wrap: nowrap;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 0.6rem;
+  }
+}
+
+.intro_title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  letter-spacing: -3.2px;
+  text-transform: capitalize;
+  line-height: 4.5rem;
+  text-align: center;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
+
+.intro_left {
+  text-align: left;
+  line-height: 2rem;
+
+  @media (max-width: $breakpoint-medium) {
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    line-height: 0.8rem;
+  }
+}
+
+.intro_info {
+  margin-top: 8rem;
+  max-width: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+}

@@ -1,0 +1,134 @@
+@import '../../variables';
+
+.projects {
+  padding: 10rem;
+  padding-bottom: 0;
+
+  @media (max-width: $breakpoint-extraLarge) {
+    padding: 5rem;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $breakpoint-large) {
+    padding: 3rem;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+}
+
+.projects_header {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: -1.6px;
+  margin-bottom: 3rem;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: $breakpoint-extraSmall) {
+    font-size: 2rem;
+  }
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+
+  @media (max-width: $breakpoint-extraLarge) {
+    gap: 4.5rem;
+  }
+
+  @media (max-width: $breakpoint-large) {
+    gap: 3rem;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    gap: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.project {
+  &:nth-of-type(5) {
+    grid-area: 3 / 2;
+
+    @media (max-width: $breakpoint-medium) {
+      grid-area: 5 / 1;
+    }
+  }
+}
+
+.project_uneven {
+  transform: translateY(10%);
+}
+
+.project_image {
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+  height: auto;
+  width: 100%;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.project_title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 0.7rem;
+  font-weight: 700;
+}
+
+.project_tags {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.project_tag {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.project_description {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.project_website {
+  display: flex;
+
+  svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 0.5rem;
+    fill: white;
+    cursor: pointer;
+    transition: 250ms all ease;
+  }
+
+  &:hover svg {
+    transform: rotate(180deg);
+  }
+}
+
+.project_largeText {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  letter-spacing: -1.6px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: 2rem;
+  }
+}
