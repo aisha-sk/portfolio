@@ -46,8 +46,7 @@ export const Projects = () => {
           title="Bees: Image Loading and Processing"
           description="Can a machine distinguish between a honey bee and a bumble bee? I used Pillow to load, transform, and build an image-processing pipeline, then visualized the results."
           website="https://github.com/aisha-sk/Bees-Image-Loading-and-Processing"
-          img="src/assets/bee1.png"
-          
+          img="/bee1.png"
           alt="Image loading pipeline for bee classification"
         />
 
@@ -61,7 +60,7 @@ export const Projects = () => {
           title="Bees: Predict Species from Images"
           description="Built a classifier to identify honey bees vs. bumble bees using traditional ML techniques and image features."
           website="https://github.com/aisha-sk/Bees-Predict-Species-from-Images"
-          img="src/assets/bee2.png"
+          img="/bee2.png"
           alt="Bees species prediction pipeline"
         />
 
@@ -71,7 +70,7 @@ export const Projects = () => {
           title="Bees: Deep Learning with Images"
           description="Developed a CNN in Keras to automatically detect honey bees and bumble bees, leveraging transfer learning for improved accuracy."
           website="https://github.com/aisha-sk/Bees-Deep-Learning-with-Images"
-          img="src/assets/bee3.png"
+          img="/bee3.png"
           alt="Deep learning model for bee detection"
         />
 
@@ -85,7 +84,7 @@ export const Projects = () => {
           title="Sloth vs. Pastry: Image Classification"
           description="A playful binary classifier that tells sloth from pain au chocolat using PyTorch and transfer learning on a custom dataset."
           website="https://github.com/aisha-sk/Sloth-vs-Pastry-PyTorch"
-          img="src/assets/sloth.png"
+          img="/sloth.png"
           alt="Sloth vs pastry classifier UI"
         />
 
@@ -95,7 +94,7 @@ export const Projects = () => {
           title="Neural Style Transfer"
           description="Blended the content of one image with the style of another using deep CNNs in TensorFlow to create unique artworks."
           website="https://github.com/aisha-sk/neural-style-transfer"
-          img="src/assets/style.png"
+          img="/style.png"
           alt="Artistic style transfer result"
         />
 
@@ -109,7 +108,7 @@ export const Projects = () => {
           title="E‑commerce Clothing Classifier"
           description="Built a smart garment classification system with Keras to improve product tagging and search for online retailers."
           website="https://github.com/aisha-sk/ecommerce-clothing-classifier-keras"
-          img="src/assets/clothing.png"
+          img="/clothing.png"
           alt="Clothing classifier demo"
         />
 
@@ -120,7 +119,7 @@ export const Projects = () => {
           title="AI Image Generator App"
           description="React + Express app integrating DALL·E for community-driven image creation and sharing."
           website="https://github.com/aisha-sk/ai-image-generator"
-          img="src/assets/dalle.png"
+          img="/dalle.png"
           alt="AI Image Generator UI"
         />
 
@@ -134,7 +133,7 @@ export const Projects = () => {
           title="React Blog"
           description="A blog built with React and custom hooks, hosted on Netlify, showcasing Axios-based API calls."
           website="https://github.com/aisha-sk/react-blog"
-          img="src/assets/blog.png"
+          img="/blog.png"
           alt="React Blog homepage"
         />
 
@@ -144,7 +143,7 @@ export const Projects = () => {
           title="Etch‑a‑Sketch"
           description="An interactive drawing board made to practice DOM manipulation with vanilla JavaScript."
           website="https://aisha-sk.github.io/etch-a-sketch/"
-          img="src/assets/etch.png"
+          img="/etch.png"
           alt="Etch-a-Sketch drawing board"
         />
 
@@ -158,7 +157,7 @@ export const Projects = () => {
           title="Amazon Frontend Clone"
           description="A work‑in‑progress clone of Amazon’s UI, including home, orders, and checkout pages."
           website="https://aisha-sk.github.io/amazon-clone1/index.html"
-          img="src/assets/amazon.png"
+          img="/amazon.png"
           alt="Amazon clone UI"
         />
 
@@ -168,7 +167,7 @@ export const Projects = () => {
           title="Rock Paper Scissors"
           description="Classic RPS game built with JavaScript—first to 5 points wins!"
           website="https://aisha-sk.github.io/rock-paper-scissors/"
-          img="src/assets/rock.png"
+          img="/rock.png"
           alt="Rock Paper Scissors game"
         />
 
@@ -182,7 +181,7 @@ export const Projects = () => {
           title="Drum Kit"
           description="A keyboard‑driven drum kit to practice DOM events—tap keys to play sounds."
           website="https://aisha-sk.github.io/drumKit/"
-          img="src/assets/drum.png"
+          img="/drum.png"
           alt="Drum Kit interface"
         />
 
@@ -193,7 +192,7 @@ export const Projects = () => {
           title="Bank Management System"
           description="A CLI‑based banking system with user registration, loan processing, deposits, and admin captcha verifications."
           website="https://github.com/aisha-sk/BankSystem"
-          img="src/assets/bank.png"
+          img="/bank.png"
           alt="Bank Management System screenshot"
         />
 
@@ -207,27 +206,9 @@ export const Projects = () => {
           title="First‑Aid Bot"
           description="A chatbot providing nearby hospitals, emergency contacts, and first‑aid instructions on demand."
           website="https://github.com/aisha-sk/FirstAidChatBot"
-          img="src/assets/bot.png"
+          img="/bot.png"
           alt="First-Aid Bot chat UI"
         />
-
-        {/* <motion.div
-          className={styles.project}
-          variants={variants.containerVariants}
-          animate={isInView ? 'visible' : 'hidden'}
-          ref={ref}
-        >
-          <motion.h3
-            variants={variants.textVariants}
-            className={styles.project_largeText}
-          >
-            Want to see more?
-          </motion.h3>
-          <motion.p variants={variants.textVariants}>
-            Check out my full GitHub for side projects, competitions, and hacks!
-            <Link href="https://github.com/aisha-sk" name="GitHub" />
-          </motion.p>
-        </motion.div> */}
       </div>
     </section>
   );
