@@ -28,7 +28,7 @@ export const Intro = (props) => {
   }, [controls, props.loaded]);
 
   return (
-    <section className={styles.intro} ref={scrollRef}>
+    <section id="home" className={styles.intro} ref={scrollRef}>
       <motion.div
         className={styles.intro_header}
         variants={variants.containerVariants}
@@ -62,13 +62,13 @@ export const Intro = (props) => {
         animate={controls}
         variants={variants.delayedVariants}
       >
-        I&rsquo;m on track to be a full stack developer & specializing in ai. you can check out my{' '}
+        I&rsquo;m a full stack developer & an ai/ml enthusiast. you can check out my{' '}
         <Link
           href="https://github.com/aisha-sk"
           name={'github'}
           label={'Click here to view my github profile'}
         />{' '}
-        or scroll down to see my projects.
+        or scroll down to see my work experience.
       </motion.p>
     </section>
   );

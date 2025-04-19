@@ -38,10 +38,19 @@ export const Header = () => {
   });
 
   const NavLink = (props) => {
-    const scrollTop = () => window.scrollTo({ top: props.scroll });
+    const handleClick = (e) => {
+      e.preventDefault();
+      const element = document.getElementById(props.targetId);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    };
 
     return (
-      <li className={styles.nav_link} onClick={scrollTop}>
+      <li className={styles.nav_link} onClick={handleClick}>
         {props.title}
       </li>
     );
@@ -65,13 +74,9 @@ export const Header = () => {
 
       <nav>
         <ul className={styles.nav_links}>
-          <NavLink title={'home'} href={'#home'} scroll={0} />
-          <NavLink title={'projects'} href={'#projects'} scroll={900} />
-          <NavLink
-            title={'about me & contact'}
-            href={'#aboutme'}
-            scroll={7000}
-          />
+          <NavLink title={'home'} targetId={'home'} />
+          <NavLink title={'projects'} targetId={'projects'} />
+          <NavLink title={'about me & contact'} targetId={'about'} />
         </ul>
       </nav>
     </motion.header>

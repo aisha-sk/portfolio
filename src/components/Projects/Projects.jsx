@@ -36,7 +36,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <motion.h2 className={styles.projects_header}>Projects</motion.h2>
       <div className={styles.projects_grid} ref={scrollRef}>
         {/* Machine Learning & AI */}
@@ -155,7 +155,7 @@ export const Projects = () => {
           translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['HTML', 'CSS', 'JavaScript']}
           title="Amazon Frontend Clone"
-          description="A work‑in‑progress clone of Amazon’s UI, including home, orders, and checkout pages."
+          description="A work‑in‑progress clone of Amazon's UI, including home, orders, and checkout pages."
           website="https://aisha-sk.github.io/amazon-clone1/index.html"
           img="/amazon.png"
           alt="Amazon clone UI"
