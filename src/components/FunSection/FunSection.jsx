@@ -7,8 +7,7 @@ export const FunSection = () => {
       <h2 className={styles.title} style={{ fontSize: '30px' }}>when i'm not coding...</h2>
       <div className={styles.content}>
         <div className={styles.text}>
-          you'll probably find me at the cat cafe in whyte ave, 
-          trying to convince myself not to adopt all the cats haha.
+          you'll probably find me at a cat cafe :)
         </div>
         <div className={styles.image}>
           <img 
@@ -19,7 +18,7 @@ export const FunSection = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.text}>
-          i also like to play badminton occasionally at UABC (university of alberta's badminton club)
+          i also like to play badminton occasionally at UABC!
         </div>
         <div className={styles.image}>
           <img 

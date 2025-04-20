@@ -10,12 +10,12 @@
   }
 
   @media (max-width: $breakpoint-large) {
-    padding: 3rem;
+    padding: 3rem 1.5rem;
     padding-bottom: 0;
   }
 
   @media (max-width: $breakpoint-medium) {
-    padding: 2rem;
+    padding: 2rem 1rem;
     padding-bottom: 0;
   }
 }
@@ -25,9 +25,11 @@
   font-size: 3rem;
   letter-spacing: -1.6px;
   margin-bottom: 3rem;
+  text-align: center;
 
   @media (max-width: $breakpoint-small) {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   @media (max-width: $breakpoint-extraSmall) {
@@ -39,9 +41,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media (max-width: $breakpoint-extraLarge) {
-    gap: 4.5rem;
+    gap: 4rem;
   }
 
   @media (max-width: $breakpoint-large) {
@@ -49,75 +53,121 @@
   }
 
   @media (max-width: $breakpoint-medium) {
-    gap: 5rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
 
 .project {
-  &:nth-of-type(5) {
-    grid-area: 3 / 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
 
-    @media (max-width: $breakpoint-medium) {
-      grid-area: 5 / 1;
+  &:nth-of-type(5) {
+    @media (min-width: $breakpoint-medium) {
+      grid-area: 3 / 2;
     }
   }
 }
 
 .project_uneven {
-  transform: translateY(10%);
+  @media (min-width: $breakpoint-medium) {
+    transform: translateY(10%);
+  }
 }
 
 .project_image {
   filter: grayscale(100%);
-  transition: filter 0.2s;
+  transition: all 0.3s ease;
   height: auto;
   width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0;
+  transform-origin: center;
 
-  &:hover {
-    filter: none;
+  @media (min-width: $breakpoint-medium) {
+    &:hover {
+      filter: none;
+      transform: scale(1.02) translateZ(0);
+    }
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    &:hover {
+      filter: none;
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    aspect-ratio: 3/2;
   }
 }
 
 .project_title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
   font-weight: 700;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 1rem;
+  }
 }
 
 .project_tags {
   display: flex;
-  margin-bottom: 1rem;
+  margin: 0.4rem 0 0.8rem;
   flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .project_tag {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 0.8rem;
-  margin-right: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+
+  @media (min-width: $breakpoint-medium) {
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
 }
 
 .project_description {
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 0.85rem;
+  }
 }
 
 .project_website {
   display: flex;
+  align-items: center;
+  margin-top: auto;
 
   svg {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     margin-right: 0.5rem;
     fill: white;
     cursor: pointer;
     transition: 250ms all ease;
   }
 
-  &:hover svg {
-    transform: rotate(180deg);
+  @media (min-width: $breakpoint-medium) {
+    &:hover svg {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -130,5 +180,9 @@
 
   @media (max-width: $breakpoint-medium) {
     font-size: 2rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 1.75rem;
   }
 }
