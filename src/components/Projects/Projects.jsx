@@ -42,44 +42,6 @@ export const Projects = () => {
         {/* Machine Learning & AI */}
         <Project
           classes={styles.project}
-          tags={['Python', 'Pillow', 'Matplotlib']}
-          title="Bees: Image Loading and Processing"
-          description="Can a machine distinguish between a honey bee and a bumble bee? I used Pillow to load, transform, and build an image-processing pipeline, then visualized the results."
-          website="https://github.com/aisha-sk/Bees-Image-Loading-and-Processing"
-          img="/bee1.png"
-          alt="Image loading pipeline for bee classification"
-        />
-
-        <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
-          tags={['Python', 'Scikit-learn']}
-          title="Bees: Predict Species from Images"
-          description="Built a classifier to identify honey bees vs. bumble bees using traditional ML techniques and image features."
-          website="https://github.com/aisha-sk/Bees-Predict-Species-from-Images"
-          img="/bee2.png"
-          alt="Bees species prediction pipeline"
-        />
-
-        <Project
-          classes={styles.project}
-          tags={['Keras', 'TensorFlow', 'NumPy']}
-          title="Bees: Deep Learning with Images"
-          description="Developed a CNN in Keras to automatically detect honey bees and bumble bees, leveraging transfer learning for improved accuracy."
-          website="https://github.com/aisha-sk/Bees-Deep-Learning-with-Images"
-          img="/bee3.png"
-          alt="Deep learning model for bee detection"
-        />
-
-        <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['PyTorch', 'Transfer Learning']}
           title="Sloth vs. Pastry: Image Classification"
           description="A playful binary classifier that tells sloth from pain au chocolat using PyTorch and transfer learning on a custom dataset."
@@ -89,7 +51,11 @@ export const Projects = () => {
         />
 
         <Project
-          classes={styles.project}
+          classes={[
+            styles.project,
+            windowSize[0] >= 680 ? styles.project_uneven : '',
+          ].join(' ')}
+          translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['TensorFlow', 'Neural Style Transfer']}
           title="Neural Style Transfer"
           description="Blended the content of one image with the style of another using deep CNNs in TensorFlow to create unique artworks."
@@ -99,11 +65,7 @@ export const Projects = () => {
         />
 
         <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
+          classes={styles.project}
           tags={['Keras', 'E-commerce', 'Image Classification']}
           title="E‑commerce Clothing Classifier"
           description="Built a smart garment classification system with Keras to improve product tagging and search for online retailers."
@@ -114,7 +76,11 @@ export const Projects = () => {
 
         {/* Web Development */}
         <Project
-          classes={styles.project}
+          classes={[
+            styles.project,
+            windowSize[0] >= 680 ? styles.project_uneven : '',
+          ].join(' ')}
+          translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['React', 'Express', 'DALL·E']}
           title="AI Image Generator App"
           description="React + Express app integrating DALL·E for community-driven image creation and sharing."
@@ -124,59 +90,7 @@ export const Projects = () => {
         />
 
         <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
-          tags={['React', 'Axios', 'Custom Hooks']}
-          title="React Blog"
-          description="A blog built with React and custom hooks, hosted on Netlify, showcasing Axios-based API calls."
-          website="https://github.com/aisha-sk/react-blog"
-          img="/blog.png"
-          alt="React Blog homepage"
-        />
-
-        <Project
           classes={styles.project}
-          tags={['JavaScript', 'HTML', 'CSS']}
-          title="Etch‑a‑Sketch"
-          description="An interactive drawing board made to practice DOM manipulation with vanilla JavaScript."
-          website="https://aisha-sk.github.io/etch-a-sketch/"
-          img="/etch.png"
-          alt="Etch-a-Sketch drawing board"
-        />
-
-        <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
-          tags={['HTML', 'CSS', 'JavaScript']}
-          title="Amazon Frontend Clone"
-          description="A work‑in‑progress clone of Amazon's UI, including home, orders, and checkout pages."
-          website="https://aisha-sk.github.io/amazon-clone1/index.html"
-          img="/amazon.png"
-          alt="Amazon clone UI"
-        />
-
-        <Project
-          classes={styles.project}
-          tags={['JavaScript']}
-          title="Rock Paper Scissors"
-          description="Classic RPS game built with JavaScript—first to 5 points wins!"
-          website="https://aisha-sk.github.io/rock-paper-scissors/"
-          img="/rock.png"
-          alt="Rock Paper Scissors game"
-        />
-
-        <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['JavaScript', 'DOM']}
           title="Drum Kit"
           description="A keyboard‑driven drum kit to practice DOM events—tap keys to play sounds."
@@ -186,16 +100,6 @@ export const Projects = () => {
         />
 
         {/* Database & Miscellaneous */}
-        <Project
-          classes={styles.project}
-          tags={['MySQL', 'Python']}
-          title="Bank Management System"
-          description="A CLI‑based banking system with user registration, loan processing, deposits, and admin captcha verifications."
-          website="https://github.com/aisha-sk/BankSystem"
-          img="/bank.png"
-          alt="Bank Management System screenshot"
-        />
-
         <Project
           classes={[
             styles.project,
