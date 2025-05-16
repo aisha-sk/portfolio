@@ -45,7 +45,7 @@ export const WorkExperience = () => {
   const experiences = [
     {
       company: "City of Edmonton",
-      role: "application & infrastructure analyst intern",
+      role: "Application & Infrastructure Analyst Intern",
       period: "jan 2025 - present · 4 mos",
       location: "edmonton, ab · on-site",
       link: "https://www.edmonton.ca/",
@@ -57,14 +57,14 @@ export const WorkExperience = () => {
     },
     {
       company: "Blueprint, Technology for Non-Profits",
-      role: "vp product",
+      role: "VP Product",
       period: "apr 2025 - present · 1 mo",
       location: "edmonton, ab · hybrid",
       link: "https://uofablueprint.com/",
       image: "/placeholder-blueprint.jpg",
       note: "incoming in may 2025 :)",
       previousRole: {
-        title: "software developer",
+        title: "Previously Software Developer",
         period: "oct 2023 - apr 2025 · 1 yr 7 mos",
         bullets: [
           "worked on the club website using the HUGO framework",
@@ -75,7 +75,7 @@ export const WorkExperience = () => {
     },
     {
       company: "Intel Corporation",
-      role: "intel student ambassador",
+      role: "Intel Student Ambassador",
       period: "may 2024 - present · 1 yr",
       location: "canada · hybrid",
       link: "https://www.intel.com/",
@@ -87,7 +87,7 @@ export const WorkExperience = () => {
     },
     {
       company: "+twe",
-      role: "ai development intern",
+      role: "AI Development Intern",
       period: "jul 2024 - sep 2024 · 3 mos",
       link: "https://twe.co/",
       image: "/placeholder-twe.jpg",
@@ -96,7 +96,7 @@ export const WorkExperience = () => {
         "prototyped with cross‑functional teams, and shipped seamless ai experiences"
       ],
       previousRole: {
-        title: "product management intern",
+        title: "Product Management Intern",
         period: "jun 2024 - jul 2024 · 2 mos",
         bullets: [
           "managed phase II of +twe's product, contributing across ai, web, and mobile development",
@@ -130,17 +130,17 @@ export const WorkExperience = () => {
               </div>
             )}
             <div className={styles.companyHeader}>
-              <a 
-                href={exp.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={styles.company}
-              >
-                {exp.company}
-              </a>
+              <h4 className={styles.role}>{exp.role}</h4>
               <span className={styles.period}>{exp.period}</span>
             </div>
-            <h4 className={styles.role}>{exp.role}</h4>
+            <a 
+              href={exp.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.company}
+            >
+              {exp.company}
+            </a>
             {exp.location && <p className={styles.location}>{exp.location}</p>}
             {exp.note && <p className={styles.note}>{exp.note}</p>}
             {exp.bullets && (

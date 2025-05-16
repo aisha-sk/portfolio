@@ -111,13 +111,14 @@
     }
 
     .company {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 0;
-      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
+      color: rgba(255, 255, 255, 0.95);
       text-decoration: none;
       position: relative;
       transition: all 0.3s ease;
+      letter-spacing: -0.5px;
 
       &::after {
         content: '';
@@ -126,16 +127,20 @@
         left: 0;
         width: 0;
         height: 1px;
-        background: linear-gradient(90deg, transparent, #fff, transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
         transition: width 0.3s ease;
       }
 
       &:hover {
-        color: rgba(255, 255, 255, 0.8);
+        color: #fff;
 
         &::after {
           width: 100%;
         }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
       }
     }
 
@@ -148,9 +153,19 @@
     }
 
     .role {
-      font-size: 0.9rem;
+      font-size: 1.8rem;
       margin: 0.3rem 0;
-      color: rgba(255, 255, 255, 0.9);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      background: linear-gradient(45deg, #fff 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.7) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     .location {

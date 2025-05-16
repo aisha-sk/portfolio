@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import { Main } from './components/Main/Main';
 import { Fluid } from './components/Fluid/Fluid';
 import { Loader } from './components/Loader/Loader';
+import { ChatBot } from './components/ChatBot/ChatBot';
 
 export const App = () => {
   const [loaded, setLoaded] = React.useState(false);
@@ -24,6 +25,7 @@ export const App = () => {
       <SmoothScroll>
         <Main loaded={loaded} />
       </SmoothScroll>
+      <ChatBot />
     </>
   );
 };
