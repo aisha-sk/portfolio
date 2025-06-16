@@ -42,12 +42,36 @@ export const Projects = () => {
         {/* Machine Learning & AI */}
         <Project
           classes={styles.project}
+          tags={['React', 'Flask', 'OpenAI API', 'LLM', 'Multimodal Retrieval']}
+          title="Multimodal Video Chat App"
+          description="Built a web app that lets users upload a YouTube video and ask questions about the content. The system returns smart, timestamped answers using transcript-based retrieval and frame-level analysis, with plans to support visual grounding in future updates."
+          website="https://github.com/aisha-sk/multimodal-video-chat"
+          img="/youtube-chat.png"
+          alt="YouTube chat interface mockup"
+        />
+
+        <Project
+          classes={[
+            styles.project,
+            windowSize[0] >= 680 ? styles.project_uneven : '',
+          ].join(' ')}
+          translateValue={windowSize[0] >= 680 ? translateValue : 0}
+          tags={['Python', 'Scikit-Learn', 'SHAP', 'Real Estate', 'Explainable AI']}
+          title="AI-Powered Property Recommendation System"
+          description="Developed a comp recommendation engine for property valuation, scoring similar homes using statistical models. Added SHAP explainability and structured the system to support future improvements via feedback or reinforcement learning."
+          website="https://github.com/aisha-sk/property-rec-system"
+          img="/real-estate.png"
+          alt="Real estate map and property cards image"
+        />
+
+        <Project
+          classes={styles.project}
           tags={['PyTorch', 'LLM Optimization', 'Time Series Forecasting']}
           title="Self-Improving Stock Price Predictor"
-          description="A sophisticated stock price prediction model using PyTorch, focusing on LLM optimization and time series forecasting."
-          website="https://github.com/aisha-sk/stock-price-predictor"
+          description="Trained neural networks on stock price data and used a large language model to suggest better hyperparameters after each iteration—creating a feedback loop for self-improvement."
+          website="https://github.com/aisha-sk"
           img="/stock-chart.png"
-          alt="Stock chart visualization"
+          alt="Stock chart graphic"
         />
 
         <Project
@@ -58,44 +82,20 @@ export const Projects = () => {
           translateValue={windowSize[0] >= 680 ? translateValue : 0}
           tags={['Keras', 'Streamlit', 'Medical Imaging', 'Explainability']}
           title="Brain Tumor Classification Assistant"
-          description="A medical imaging tool using Keras and Streamlit for brain tumor classification with explainable AI features."
-          website="https://github.com/aisha-sk/brain-tumor-classifier"
+          description="Built a diagnostic tool that classifies brain tumors from MRI scans using both Xception and a custom CNN model. Integrated Gemini 1.5 Flash for multimodal explanations and built a Streamlit app for uploads, predictions, and chatting with the scan."
+          website="https://github.com/aisha-sk"
           img="/brain-mri.png"
           alt="Brain MRI scan preview"
         />
 
         <Project
           classes={styles.project}
-          tags={['LangChain', 'Python', 'Finance', 'LLM Automation']}
+          tags={['LangChain', 'RAG', 'Python', 'Finance', 'LLM Automation']}
           title="Real-Time Financial Analysis with LLMs"
-          description="An intelligent financial analysis system using LangChain and Python for automated market insights."
-          website="https://github.com/aisha-sk/financial-analysis-llm"
+          description="Built an LLM-powered financial intelligence system for a quantitative hedge fund—scraping market news, extracting structured data, and performing real-time sentiment and company analysis for stock selection."
+          website="https://github.com/aisha-sk"
           img="/financial-news.png"
-          alt="Financial news dashboard"
-        />
-
-        <Project
-          classes={[
-            styles.project,
-            windowSize[0] >= 680 ? styles.project_uneven : '',
-          ].join(' ')}
-          translateValue={windowSize[0] >= 680 ? translateValue : 0}
-          tags={['React', 'Flask', 'OpenAI API', 'LLM', 'Multimodal Retrieval']}
-          title="Multimodal Video Chat App"
-          description="A web app that allows users to upload a YouTube video and ask questions about the content, returning smart, timestamped answers."
-          website="https://github.com/aisha-sk/multimodal-video-chat"
-          img="/youtube-chat.png"
-          alt="YouTube chat interface mockup"
-        />
-
-        <Project
-          classes={styles.project}
-          tags={['Python', 'Scikit-Learn', 'SHAP', 'Real Estate', 'Explainable AI']}
-          title="AI-Powered Property Recommendation System"
-          description="A recommendation engine for property valuation, scoring similar homes using statistical models with SHAP explainability."
-          website="https://github.com/aisha-sk/property-rec-system"
-          img="/real-estate.png"
-          alt="Real estate map and property cards image"
+          alt="Financial news dashboard image"
         />
 
         <Project
